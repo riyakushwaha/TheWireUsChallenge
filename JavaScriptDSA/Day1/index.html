@@ -1,0 +1,114 @@
+<html>
+    <title>JS-Day1</title>
+   <head>
+    <script>
+
+var favoriteColors = ["Red", "Black", "Purple", "White", "Pink", "Plum"];
+
+// 1. Print length of array.
+console.log("Array Length: "+favoriteColors.length);
+
+// 2. Color at third index
+console.log("Color at third index: "+favoriteColors[3]);
+
+// 3. Add color at end
+favoriteColors.push("Grey");
+
+//4. Remove last color
+var x =favoriteColors.pop();
+
+// 5. Add removed color at beg
+favoriteColors.unshift(x);
+
+//6. Remove first color
+favoriteColors.shift(x);
+
+//7. Print each ele
+favoriteColors.forEach(ele => console.log("One of my favorite colors is "+ele));
+
+//8. Convert all colr to uppercase
+var arr = favoriteColors.map(val => val.toUpperCase());
+console.log("All Upper case: "+arr);
+
+//9. Print all colors starting with "P"
+console.log("All Colors starting with P");
+favoriteColors.forEach((ele)=> {
+    if(ele.startsWith("P"))
+    {
+        console.log(ele);
+    }
+});
+
+// 10. Print first color starting with "P"
+for(var i =0;i<favoriteColors.length; i++){
+    if(favoriteColors[i].startsWith("P"))
+    {
+        console.log("First color start with P "+ favoriteColors[i]);
+        break;
+    }
+
+} 
+
+//11. Check if purple is in colors
+if(favoriteColors.includes("Purple"))
+{
+    console.log("Purple is present in thr array");
+}
+
+//12. Index of white
+console.log("Index of White: "+favoriteColors.indexOf("White"));
+
+
+//13. Print index of all colors starting with "W"
+for(var i =0;i<favoriteColors.length; i++){
+    if(favoriteColors[i].startsWith("W"))
+    {
+        console.log(i);
+        
+    }
+
+}
+
+//14. Check if all have length greater than 3
+console.log(favoriteColors.every((ele)=> ele.length>3));
+
+//15. Concatenate
+var moreColors = ["Orange", "Yellow", "Brown", "Green"];
+var finalArray = favoriteColors.concat(moreColors);
+console.log("Concatenated Array "+ finalArray);
+
+//16. Print array from index 1 to 7 excluded
+for(var i =1;i<7; i++){
+    
+        console.log(finalArray[i]);
+    
+} 
+
+// 17. Print elements from 2 to 3 more
+var j =2;
+while(j<5)
+{
+    console.log(finalArray[j]); 
+    j++;
+}
+
+//18. Sorted array
+console.log("Sorted Array: "+ finalArray.sort());
+
+//19. Reverse Array
+console.log("ReverseArray: "+ finalArray.reverse());
+
+//20. Join Array
+console.log("Joined Array: "+ finalArray.join(" and "));
+
+//21. Expand array and take it out of its structure.
+
+
+   </script>
+   </head>
+   <body>
+
+    
+
+   </body>
+</html>
