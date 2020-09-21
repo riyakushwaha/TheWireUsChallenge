@@ -1,0 +1,56 @@
+<html>
+    <title>JSDSA-Day3</title>
+   <head>
+    <script>
+function myFunction()
+{ 
+    var n = prompt("Enter any number");
+
+    for(var i =0; i<n; i++)
+    {
+        var start = i+1;
+        var num = Math.abs(parseInt(n/2)-i);
+        var j =0;
+        var count = n -(2*num);
+
+        while(j<num)
+        {
+            document.write("&nbsp;");  
+            j++;
+        }
+
+
+        for(var k=num-1; k< parseInt(n/2); k++)
+        {  
+            document.write(start++);
+            count--;   
+        }
+
+        start=start-1;
+
+        while(count>0)
+        {
+             document.write(--start);
+            count--;
+           
+        }
+
+        document.write("<br>");
+    }
+    
+   
+}
+    </script>
+   </head>
+   <body style="margin: 15%;">
+<div >
+<p>Click the button to make a pattern.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+</div>
+    
+
+   </body>
+</html>
