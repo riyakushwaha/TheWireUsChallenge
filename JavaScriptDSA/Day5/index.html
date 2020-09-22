@@ -1,0 +1,64 @@
+<html>
+    <title>JSDSA-Day5</title>
+   <head>
+    <script>
+function myFunction()
+{ 
+    var n = prompt("Enter any number");
+    for(var i =0; i<n; i++)
+    {
+        var start = i+1;
+        var j =0;
+        var num = Math.abs(parseInt(n/2)-i);
+        
+       if(n%2==0)
+        {
+            if(i<parseInt(n/2))
+            {
+                num--;
+            }
+        }
+        while(j<num)
+        {
+            document.write("&nbsp;&nbsp;&nbsp;");  
+            j++;
+        }
+        j=0;
+            count= n-(2*num);
+            if(n%2==0)
+            {
+              count--;
+            }
+            j=0;
+
+        while(j<count)
+        {
+            if(j<parseInt(count/2))
+            {
+                document.write((start++)+"&nbsp;");
+            }
+            else{
+                document.write((start--)+"&nbsp;");
+            }
+            j++;
+        }
+
+        document.write("<br>");
+    }
+    
+   
+}
+    </script>
+   </head>
+   <body style="margin: 15%;">
+<div >
+<p>Click the button to make a pattern.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+</div>
+    
+
+   </body>
+</html>
