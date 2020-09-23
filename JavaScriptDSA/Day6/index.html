@@ -1,0 +1,74 @@
+<html>
+    <title>JSDSA-Day6</title>
+   <head>
+    <script>
+myFunction();
+function fact(n)
+{
+    if(n==0)
+        {
+            return 1;
+        }
+        else
+        {
+            return n*fact(n-1);
+            
+        }
+}
+
+function myFunction()
+{ 
+    var n = prompt("Enter any number");
+
+    for(var i =0; i<n; i++)
+    {
+      // document.write("&nbsp;&nbsp;");
+  
+        var space = n-i-1;
+        while(space>0)
+        {
+            document.write("&nbsp;&nbsp;");
+            space--;
+        }
+
+        var num = 2*i+1;
+        var index =0;
+
+        for(var j=num; j>0; j--)
+        {
+            if(j==1)
+            {
+                document.write("&nbsp;1");
+          
+            }
+            else if(j%2==0)
+            {
+                document.write("&nbsp;");
+            }
+            else{
+
+                var a = parseInt(fact(i)/(fact(i-index)*fact(index++)));
+                document.write("&nbsp;"+a+"&nbsp;");
+
+            }
+        }
+
+        document.write("<br>");
+    }
+    
+   
+}
+    </script>
+   </head>
+   <body style="margin: 15%;">
+<div >
+<!-- <p>Click the button to make a pattern.</p>
+
+<button onclick="myFunction()">Try it</button>
+ -->
+
+</div>
+    
+
+   </body>
+</html>
