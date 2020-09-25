@@ -1,0 +1,25 @@
+<html>
+    <title>JS-Day8</title>
+   <head>
+
+   </head>
+   <body>
+   <div id="demo"> </div>
+<script>
+
+    var sub = ['English', 'Science', 'Social Science', 'Mathematics', 'Sanskrit', 'Computer Science','Hindi' ];
+    var index = prompt("Select one number between 0-6");
+    if(index>0 && index<7)
+    {
+        document.getElementById("demo").innerHTML = "My subject number " + index+ " is "+sub[index];
+    }
+    else
+    {
+        document.getElementById("demo").innerHTML ="Wrong choice Mom!";
+    }
+
+
+
+</script>
+   </body>
+</html>
