@@ -1,0 +1,29 @@
+<html>
+    <title>JS-Day11</title>
+   <head>
+
+   </head>
+   <body>
+       <h1>This Keyword Day</h1>
+
+       
+
+
+<script>
+
+var headphones = {
+    brand: "SONY",
+    color: "White",
+    price: "Rs. 5,000",
+    availability: "Abundance",
+    message: function(){
+        document.write( "This "+ this.color +" coloured "+ this.brand+ " headphone has "+ this.availability+ " availability and costs "+this.price);
+    }
+};
+
+headphones.message();
+
+</script>
+
+   </body>
+</html>
