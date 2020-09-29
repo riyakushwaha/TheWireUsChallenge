@@ -1,0 +1,42 @@
+<html>
+    <title>JS-Day12</title>
+   <head>
+<style>
+
+    body{
+        background: #6c7b95;
+    }
+#image{
+    width: 50%;
+    display: block;
+visibility: hidden;
+}
+
+
+</style>
+   </head>
+   <body>
+       <h1>Button Interaction</h1>
+     
+       <button onclick="show()" id="on">Send Bat Signal</button>
+       <img src="bat.jpg" id ="image" alt="Bat image">
+       <p id="text"></p>
+       
+
+
+       
+
+
+<script>
+function show()
+{
+    document.getElementById("on").style.visibility="hidden";
+    document.getElementById("image").style.visibility="visible";
+    document.getElementById("text").innerHTML = "It is not who I am underneath but what I do  that defines me";
+    
+}
+
+</script>
+
+   </body>
+</html>
