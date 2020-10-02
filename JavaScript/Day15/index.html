@@ -1,0 +1,57 @@
+<html>
+    <title>JS-Day15</title>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <style>
+
+         body
+         {
+            padding: 2%;
+         }
+         .container
+         {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+img{
+   width: 200px;
+   height: 200px;
+}
+        
+    
+
+      </style>
+
+   </head>
+
+   <body>
+            <div class="container">
+       <img id="plant" src="plant.jpg" alt="plant">
+       </div>
+
+      
+<script>
+
+$(document).ready(function(){
+ 
+ $("img").hover(function()
+ { 
+  
+    $(this).css("height", 400+"px");
+   }, function(){
+     
+ 
+    $(this).css("height", 200+"px");
+ });
+});
+
+
+</script>
+
+</body>
+</html>
