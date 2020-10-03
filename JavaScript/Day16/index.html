@@ -1,0 +1,56 @@
+<html>
+    <title>JS-Day16</title>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <style>
+
+         body
+         {
+            padding: 2%;
+         }
+         .container
+         {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+img{
+   width: 40%;
+}
+        
+    
+
+      </style>
+
+   </head>
+
+   <body>
+            <div class="container">
+       <img id="giraffe" src="gif1.jfif" alt="giraffe">
+       </div>
+
+      
+<script>
+
+$(document).ready(function(){
+ 
+ $("img").hover(function()
+ { 
+  
+    $(this).attr("src", "gif2.jfif");
+   }, function(){
+     
+ 
+    $(this).attr("src", "gif1.jfif");
+ });
+});
+
+
+</script>
+
+</body>
+</html>
